@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color:#1C2649;
+            }
+            header{
+                background: linear-gradient(#000000, #1C2649);
+                background: -moz-linear-gradient(#000000, #1C2649);
+                background: -webkit-linear-gradient(#000000, #1C2649);
+                height:220px;
+            }
+            .logoclass{
+                position: absolute;
+                top:4%;
+                left:7%;
+            }
+            h1{
+                text-align: center;
+                color:#ffffff;
+                font-size:300%;
+                position:relative;
+                bottom:30px;
+            }
+            h2{
+                text-align:center;
+                color:#ffffff;
+                font-size:180%;
+                position:relative;
+                bottom:70px;
+            }
+            input.example, select{
+                width:250px;
+                height:30px;
+            }
+            input.submit, select{
+                height:35px;
+            }
+            div{
+                text-align: center;
+                
+            }
+            .extends{
+                vertical-align: top;
+                line-height: 0;
+            }
+            p{
+                margin: 60px;
+            }
+            .input-field{
+                width: 220px;
+                height: 28px;
+                position:relative;
+                bottom:50px;
+            }
+            .submit{
+                position:relative;
+                bottom:50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <a href="index.html"><!--ここにindex.htmlのリンクを貼る-->
+                    <img src="../../static\imgapp\baronet-logo.png" width="230" height="150" class="logoclass">
+                </a>
+            </header>
+        </div>
+        
+        <div style="text-align: center;"> <!--text-align: centerで画像を真ん中にセットする。-->
+            <p>
+                {% block main %}
+                {% endblock main %}
+            </p>
+        </div>>
+    </body>
+</html>
